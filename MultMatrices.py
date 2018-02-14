@@ -1,6 +1,6 @@
 import time
 import random
-import numpy as np
+
 
 def Mult(A , B):
     top = 0
@@ -8,7 +8,7 @@ def Mult(A , B):
     mul = 0
     for i in range(0,tam):
         for j in range(0,tam):
-            np.dot(A,B)
+            mul = A[i][i]*B[i][j] + A[i][j]*B[j][i]
         top = time.clock()
         top = top - t0
     total = time.clock()
